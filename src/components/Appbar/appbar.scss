@@ -1,0 +1,45 @@
+@import '../../styles/base';
+
+.appbar {
+  height: 80px;
+  padding-top: 30px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content-left {
+    font-size: 30px;
+  }
+  &__content-right {
+    display: flex;
+    align-items: center;
+    //increse the font-size of icons
+    svg.MuiSvgIcon-root {
+      font-size: 5rem;
+      color: $black;
+    }
+  }
+  &__content-cart {
+    display: flex;
+    align-items: center;
+    margin-right: -3px;
+  }
+  &__content-cart-counter {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: $blackLight;
+    color: $white;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .active {
+    background-color: $primary;
+  }
+}
